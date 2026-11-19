@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Columns is a falling-gem puzzle game for the original monochrome Game Boy. See the controls and get the ROM from GitHub.">
+  <meta name="theme-color" content="#e6e2dc">
+  <title>Columns — A falling-gem puzzle for Game Boy</title>
+  <link rel="canonical" href="https://costa365.github.io/gb-columns/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=DM+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top">
+        <span class="gem-mark" aria-hidden="true"></span>
+        Columns
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#screenshots">Screenshots</a>
+        <a href="#how-to-play">Controls</a>
+        <a class="source-link" href="https://github.com/Costa365/gb-columns">
+          GitHub <span aria-hidden="true">↗</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="wrap hero" id="top" aria-labelledby="game-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="power-light" aria-hidden="true"></span> Game Boy homebrew</p>
+        <h1 id="game-title">Columns</h1>
+        <p class="lede">Match gems, trigger cascades, and keep the stack from reaching the top. A falling-gem puzzle for the original monochrome Game Boy.</p>
+        <div class="actions">
+          <a class="button" href="#get-the-rom">Get the ROM <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#how-to-play">How to play <span aria-hidden="true">↗</span></a>
+        </div>
+        <ul class="game-details" aria-label="Game details">
+          <li>Single player</li>
+          <li>3 difficulties</li>
+          <li>32 KiB ROM</li>
+        </ul>
+      </div>
+
+      <figure class="cartridge">
+        <img src="assets/columns-cartridge.webp" width="1024" height="868" alt="Gray cartridge with a colorful Columns label showing stacked gems and the game board" fetchpriority="high">
+        <figcaption>Cartridge concept</figcaption>
+      </figure>
+    </section>
+
+    <section class="gallery" id="screenshots" aria-labelledby="screenshots-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2 id="screenshots-title">Screenshots</h2>
+          <span class="trim" aria-hidden="true"></span>
+        </div>
+        <div class="screens">
+          <figure>
+            <div class="screen-bezel">
+              <img src="screenshots/home.png" width="170" height="144" alt="Difficulty menu with Easy, Normal, and Hard options and Normal selected" loading="lazy">
+            </div>
+            <figcaption>Difficulty menu</figcaption>
+          </figure>
+          <figure>
+            <div class="screen-bezel">
+              <img src="screenshots/help.png" width="170" height="144" alt="In-game help showing horizontal, vertical, and diagonal matches above the controls" loading="lazy">
+            </div>
+            <figcaption>In-game help</figcaption>
+          </figure>
+          <figure>
+            <div class="screen-bezel">
+              <img src="screenshots/play.png" width="170" height="144" alt="A falling trio above a stack of gems, with score and next-piece preview in the sidebar" loading="lazy">
+            </div>
+            <figcaption>Gameplay</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap play" id="how-to-play" aria-labelledby="controls-title">
+      <div>
+        <h2 id="controls-title">How to play</h2>
+        <p>Move a falling trio and cycle its gems to match three or more of the same shape in a row, column, or diagonal. Matches clear, and the gems above them can fall into new matches.</p>
+        <dl class="difficulties">
+          <div>
+            <dt>Easy</dt>
+            <dd>Five shapes, slower fall</dd>
+          </div>
+          <div>
+            <dt>Normal</dt>
+            <dd>Six shapes, medium fall</dd>
+          </div>
+          <div>
+            <dt>Hard</dt>
+            <dd>Six shapes, faster fall</dd>
+          </div>
+        </dl>
+      </div>
+
+      <table class="controls">
+        <thead>
+          <tr>
+            <th scope="col">Button</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row" aria-label="Left and Right"><kbd>←</kbd> <kbd>→</kbd></th><td>Move the trio</td></tr>
+          <tr><th scope="row"><kbd>A</kbd> <kbd>B</kbd></th><td>Cycle gems in opposite directions</td></tr>
+          <tr><th scope="row" aria-label="Down"><kbd>↓</kbd></th><td>Soft drop</td></tr>
+          <tr><th scope="row" aria-label="Up"><kbd>↑</kbd></th><td>Hard drop</td></tr>
+          <tr><th scope="row"><kbd>Start</kbd></th><td>Pause or resume</td></tr>
+          <tr><th scope="row"><kbd>Select</kbd></th><td>Return to the menu while paused</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="wrap" id="get-the-rom" aria-labelledby="rom-title">
+      <div class="download">
+        <div class="download-copy">
+          <h2 id="rom-title">Get the ROM</h2>
+          <ol>
+            <li>Open the <a href="https://github.com/Costa365/gb-columns/blob/main/columns.gb">columns.gb file on GitHub</a>.</li>
+            <li>Select <strong>Download raw file</strong> above the file preview.</li>
+            <li>Open <code>columns.gb</code> in a Game Boy emulator.</li>
+          </ol>
+        </div>
+        <a class="button button-light" href="https://raw.githubusercontent.com/Costa365/gb-columns/main/columns.gb">Download columns.gb <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap site-footer">
+    <a class="wordmark" href="#top"><span class="gem-mark" aria-hidden="true"></span> Columns</a>
+    <a href="https://github.com/Costa365/gb-columns">Source on GitHub <span aria-hidden="true">↗</span></a>
+  </footer>
+</body>
+</html>
