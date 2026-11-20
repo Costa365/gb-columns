@@ -149,7 +149,7 @@ h1, h2 {
 
 h1 {
   margin: .65rem 0 1.1rem -.045em;
-  font-size: clamp(3.5rem, 7vw, 6.5rem);
+  font-size: clamp(2.75rem, 5.25vw, 4.875rem);
   letter-spacing: -.075em;
   text-transform: uppercase;
 }
@@ -228,19 +228,15 @@ h2 {
 }
 
 .cartridge {
-  position: relative;
-  min-width: 0;
-  overflow: hidden;
-  border: 1px solid #a6a4ad;
-  border-radius: .7rem .7rem 3.5rem .7rem;
+  justify-self: center;
+  width: min(100%, 20rem);
+  text-align: center;
 }
 
 .cartridge img { width: 100%; }
 
 .cartridge figcaption {
-  position: absolute;
-  left: 1.05rem;
-  bottom: .7rem;
+  margin-top: .5rem;
   color: #494351;
   font: 500 .65rem var(--mono);
   letter-spacing: .08em;
@@ -435,7 +431,7 @@ kbd {
   .wordmark { gap: .55rem; font-size: .78rem; }
   .hero, .play { grid-template-columns: 1fr; }
   .hero { padding-top: 2.6rem; }
-  h1 { font-size: clamp(3rem, 12vw, 5rem); }
+  h1 { font-size: clamp(2.25rem, 9vw, 3.75rem); }
   .screens { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
   .download { flex-direction: column; align-items: flex-start; }
 }
